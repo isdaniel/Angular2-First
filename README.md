@@ -1,8 +1,9 @@
-npm install 安裝所需的package
-npm start 編譯並執行server
-http://localhost:3000 
+# 注意
+- npm install 安裝所需的package
+- npm start 編譯並執行server
+- http://localhost:3000 
 
-```bash
+```
 npm install
 npm start
 ```

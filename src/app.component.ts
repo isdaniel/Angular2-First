@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 
 import { LoggerService } from './logger.service';
+
+
 
 @Component({
   selector: 'my-app-root',
@@ -28,4 +30,6 @@ export class AppComponent {
   receive(msg: string) {
     this.msgFromChild = msg;
   }
+
 }
+

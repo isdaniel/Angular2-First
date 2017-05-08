@@ -6,7 +6,9 @@ import { Component,Input,Output,EventEmitter } from '@angular/core';
 })
 
 export class ChildComponent  {
+    //Input 從父組件傳進來的資訊
     @Input() title:string;
+    //output 子組件傳向父組件
     @Output() childToParent:EventEmitter<string> = new EventEmitter();
 
     constructor()  { }
