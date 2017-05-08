@@ -1,0 +1,12 @@
+<div>
+  <h1>根组件</h1>
+  <p>
+    {{ greeting }}
+  </p>
+  <label>
+      <input type="checkbox" [(ngModel)]="IsShow">
+  </label>
+  <p *ngIf="IsShow" BackGroundColor>Hello!! Hidding me</p>
+  <child-root [title]="parentToChild" (childToParent)="receive($event)"></child-root>
+  <p>{{ msgFromChild || '暫無' }}</p>
+</div>
